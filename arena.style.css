@@ -1,0 +1,179 @@
+.card {
+    display: inline-block;
+    margin: 10px;
+    background: seashell;
+    width: 30%;
+}
+.between {
+    height: 0;
+}
+.player {
+    width: 100%;
+    max-width: 250px;
+    min-width: 230px;
+    height: 500px;
+    padding: 15px;
+}
+.inner-bg {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: calc(33% - 20px);
+    left: calc(50% - 60px);
+    animation: rotateThis 1s linear infinite;
+    border-radius: 60px;
+}
+.inner-bg-first {
+    background: linear-gradient(0deg, gold, cyan);
+}
+.inner-bg-second {
+    background: linear-gradient(90deg, darkmagenta, transparent);
+}
+.health-progress {
+    width: 100%;
+    height: 10px;
+    border: 1px solid #777;
+    border-radius: 7px;
+    text-align: left;
+    position: relative;
+    top: 103%;
+    background-color: #eee;
+}
+.card .health {
+    display: block;
+    height: 100%;
+    margin-left: 0;
+    border-radius: 5px;
+}
+.card.me .health {
+    background-color: limegreen;
+}
+.card.enemy .health {
+    background-color: crimson;
+}
+.inner-card {
+    display: flex;
+    height: 100%;
+}
+.player .inner-card {
+    border: 3px dotted cyan;
+    border-radius: 45px;
+    font-size: 20pt;
+}
+.player .inner-card:not(.waiting) {
+    border: 3px solid darkmagenta;
+    border-radius: 45px;
+}
+.player span {
+    display: block;
+    margin: auto;
+}
+.indicators {
+    height: 500px;
+    padding: 15px;
+}
+.indicators span.round-timer {
+    display: block;
+    margin: auto;
+    z-index: 1;
+    color: darkmagenta;
+    width: 90px;
+    height: 22px;
+    background: seashell;
+    border-radius: 45px;
+    padding: 32px 0;
+    font-size: 20pt;
+    position: absolute;
+    top: 33%;
+    left: calc(50% - 45px);
+}
+form {
+    margin: 0;
+}
+.indicators .btn-container .attack {
+    width: 160px;
+    height: 70px;
+    padding-right: 30px;
+    background: transparent;
+    border: none;
+    color: darkmagenta;
+    font-weight: bold;
+    font-size: 16pt;
+    margin: 0;
+    box-shadow: none;
+}
+.between .btn-container .attack:disabled {
+    background-color: gray;
+    opacity: 0.7;
+    border-radius: 50%;
+}
+.between .btn-container {
+    position: relative;
+    width: 160px;
+    height: 70px;
+    border: 3px solid darkmagenta;
+    border-radius: 50%;
+    background: linear-gradient(90deg, limegreen, crimson);
+}
+.between .btn-container:after {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-right: 3px solid darkmagenta;
+    border-top: 3px solid darkmagenta;
+    transform: rotate(45deg);
+}
+.log-container {
+    margin-top: 20px;
+    padding: 5px 0;
+}
+.log-container textarea {
+    resize: none;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+.container__winner-msg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.winner-message {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    margin-top: 13%;
+    background: aliceblue;
+    border-radius: 50px;
+    border: 6px solid darkgoldenrod;
+}
+.btn-container .pretty.rest {
+    margin: auto;
+    height: 30%;
+    min-height: 50px;
+    max-height: 150px;
+}
+.win-msg {
+    height: 30%;
+    text-align: center;
+    font-size: 20pt;
+}
+.win-msg span {
+    display: block;
+    margin: 30px auto;
+}
+
+@keyframes rotateThis {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+    to {
+        transform: rotate(360deg) scale(1);
+    }
+}

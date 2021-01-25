@@ -1,0 +1,137 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 14pt;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+iframe {
+    border: 0;
+    display: inline-block;
+    width: 45%;
+    min-height: 500px;
+}
+input[type="button"]{
+    border: none;
+}
+.container {
+    height: auto;
+    width: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    padding: 50px;
+    background-color: seashell;
+    text-align: center;
+}
+.big_title {
+    width: 90%;
+    height: 25%;
+    margin: 0 auto;
+    font-size: 21pt;
+    display: flex;
+}
+.mdl {
+    margin: auto;
+}
+.btn-container {
+}
+.btn-container:only-child {
+    text-align: center;
+    text-align: -webkit-center;
+}
+.btn-container:nth-child(2n+1) {
+    text-align: left;
+    text-align: -webkit-left;
+}
+.btn-container:nth-child(2n) {
+    text-align: right;
+    text-align: -webkit-right;
+}
+.btn-container .pretty {
+    display: block;
+    width: 250px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 14pt;
+    background: silver;
+    opacity: 0.8;
+    box-shadow: #aaa 3px 3px;
+    border: none;
+}
+.btn-container .pretty:hover {
+    background-color: #eee;
+}
+.tech {
+    position: absolute;
+    bottom: 0;
+    color: #777;
+}
+/*auth n login*/
+.error-msg {
+    margin: 20px auto;
+    font-size: 14pt;
+}
+.error-msg a {
+    text-decoration: underline;
+    text-decoration-color: orangered;
+    font-size: 16pt;
+}
+.fld-container {
+    display: flex;
+    text-align: center;
+}
+.fld-dialog {
+    text-align: left;
+    margin: 20px auto;
+}
+.form-btn-cnt {
+    display: block;
+    width: 250px;
+    height: 75px;
+    margin-left: -15px;
+}
+.form-btn {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: none;
+    background-color: #ddd;
+    box-shadow: #aaa 3px 3px;
+}
+.form-btn:hover {
+    background-color: #eee;
+}
+
+/*кнопка вернуться*/
+.rtn-btn {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 35px;
+}
+.orange {
+    display: block;
+    height: 100%;
+}
+.btn-orange {
+    width: 100%;
+    height: 100%;
+    background: coral;
+    color: antiquewhite;
+    border-radius: 15px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+.btn-orange:hover {
+    opacity: 0.7;
+}
