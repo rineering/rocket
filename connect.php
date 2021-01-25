@@ -7,7 +7,7 @@ $memcached->addServer('local.rocket', 11211);
 $bd = mysqli_connect(
     '127.0.0.1',
     'rocket',
-    'sky777',
+    '******',
     'localrocket'
 );
 if ($err = mysqli_connect_error()){
